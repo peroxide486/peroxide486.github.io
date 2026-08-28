@@ -26,4 +26,11 @@ allowBuilds:
 
 ```
 
+需要允许哪个通过就加哪个，比如错误日志提示 `[ERR_PNPM_IGNORED_BUILDS] Ignored build scripts: @parcel/watcher@2.6.0` 那就应该写成
+
+```yaml
+allowBuilds:
+  "@parcel/watcher": true
+```
+
 如果你是在创建 VuePress Theme Hope 项目, 那你需要在选择好语言后再创建文件防止误判目录为非空目录
